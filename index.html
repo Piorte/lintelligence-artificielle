@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <title>Intelligence Artificielle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=500, initial-scale=1">
+  <meta name="description" content="Site de documentation sur l'IA">
+  <meta property="og:image" content="AI-logo-gradient.ico">
+  <link rel="icon" href="AI-logo-gradient.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- icons google -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+
+
+  <!--────────────────Script de détection de l'appareil───────────────-->
+
+  <script type="text/javascript">
+    // Détection
+    function isMobileOrSmallScreen() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1) || (window.innerWidth < 920);
+    }
+
+    // Redirection
+    if (isMobileOrSmallScreen()) {
+      window.location.href = "unavailable.html";
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- ──────────────────Menu rideau et autres...────────────────── -->
+
+  <nav class="nav">
+    <a href="#1" class="mr">1. Qu'est-ce que l'intelligence artificielle ?</a>
+    <a href="#2" class="mr">2. Son assistance au quotidien</a>
+    <a href="#3" class="mr">3. L'IA dans la santé</a>
+    <a href="#4" class="mr">4. L'IA dans l'art</a>
+    <a href="#5" class="mr">5. L'IA dans les vidéos</a>
+    <a href="#6" class="mr">6. L'IA dans la musique</a>
+    <a href="#7" class="mr">7. Chatgpt</a>
+    <a href="#8" class="mr">8. Microsoft bing</a>
+    <a href="#9" class="mr">9. Les innovations de google 2023-2024</a>
+    <a href="#10" class="mr">10. Google bard</a>
+    <a href="#11" class="mr">11. Paragraphica</a>
+    <a href="#12" class="mr">12. Comment sont programmées les IA ?</a>
+    <a href="#13" class="mr">13. Est-ce que l'IA peut penser ou apprendre ?</a>
+    <a href="#14" class="mr">14. Google Teachable Machine</a>
+    <a href="#15" class="mr">15. Est-ce que l'intelligence artificielle nous remplacera un jour
+      ?</a>
+    <a href="#16" class="mr">16. Les dangers de l'IA</a>
+    <a href="#17" class="mr">17. Conclusion</a>
+  </nav>
+  <button type="button" class="nav-toggler">
+    <span class="line l1"></span>
+    <span class="line l2"></span>
+    <span class="line l3"></span>
+  </button>
+
+  <!-- ----------- -->
+
+  <a href="#top" class="btn" id="scrollToTopButton" aria-label="Retour au sommaire">
+    <img src="top.png" height="30" width="30">
+  </a>
+
+  <!--────────────────Header───────────────-->
+
+  <header>
+    <!-- <a class="logo" href="https://lintelligence-artificielle.piorte06.repl.co/">
+      <img src="AI-logo.png">
+    </a> -->
+    <nav>
+      <ul class="nav-bar">
+        <li><a class="nav-link active" href="index.html">FR <ion-icon name="home"></ion-icon></a>
+          <a class="nav-link" href="index-en.html">EN <ion-icon name="language"></ion-icon></a>
+        </li>
+        <li><a class="nav-link" href="#summary">Sommaire <ion-icon name="document-text"></ion-icon></a></li>
+        <li><a class="nav-link" href="#contact">Contact <ion-icon name="chatbubbles"></ion-icon></a></li>
+        <!-- <li><a href="#" class="new">Nouveautés</a></li> -->
+        <!-- <li><a class="movie" href="movie.html">Film <ion-icon name="videocam"></ion-icon></a></li> -->
+        <li><a class="flash-ai" href="flash-ai.html">Flash-ai <ion-icon name="flash" class="flash"></ion-icon></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SOMMAIRE + INTRO -->
+
+  <div class="parallax" id="top"></div>
+
+  <section>
+    <div class="presentation">
+      <ul>
+        <br>
+        <h1 class="presentation">L'intelligence artificielle</h1>
+        <h3 class="presentation fade-left"><b>De nos jours, l'intelligence artificielle (également appelée "IA") est
+            présente où
+            que nous soyons, et permet de nous aider à réaliser des tâches cérébrales, des simulations, et des créations
+            qui nous prennent du temps par des ordres ou encore par un simple texte. Mais IA présente aussi de
+            nombreux dangers notamment lors d'une rapide évolution. C'est ce que nous allons voir ensemble
+            aujourd'hui...</b></h3>
+        <img src="Files/0-img-ia-presentation.jpg" alt="ia" width="800"><br><br>
+        <b class="presentation" id="summary">Sommaire :</b>
+        <b>
+          <h3>
+            <ul>
+              <a href="#1" class="presentation a">1. Qu'est-ce que l'intelligence artificielle ?</a><br>
+              <a href="#2" class="presentation a">2. Son assistance au quotidien</a><br>
+              <a href="#3" class="presentation a">3. L'IA dans la santé</a><br>
+              <a href="#4" class="presentation a">4. L'IA dans l'art</a><br>
+              <a href="#5" class="presentation a">5. L'IA dans les vidéos</a><br>
+              <a href="#6" class="presentation a">6. L'IA dans la musique</a><br>
+              <a href="#7" class="presentation a">7. Chatgpt</a><br>
+              <a href="#8" class="presentation a">8. Microsoft bing</a><br>
+              <a href="#9" class="presentation a">9. Les innovations de google 2023-2024 :</a>
+              <details class="italic">
+                <summary>👉 Détails</summary>
+                <ul type="disc">
+                  <li><a href="#a" class="presentation a">Magic editor</a></li>
+                  <li><a href="#b" class="presentation a">About this image</a></li>
+                  <li><a href="#c" class="presentation a">Google maps</a></li>
+                  <li><a href="#d" class="presentation a">MusicLM</a></li>
+                  <li><a href="#e" class="presentation a">Universal translator</a></li>
+                  <li><a href="#f" class="presentation a">Sidekick</a></li>
+                  <li><a href="#g" class="presentation a">Tailwind</a></li>
+                  <li><a href="#h" class="presentation a">Project Starline</a></li>
+                  <li><a href="#i" class="presentation a">Magic compose</a></li>
+                  <li><a href="#j" class="presentation a">paLM 2</a></li>
+                  <li><a href="#k" class="presentation a">sec-paLM - med-paLM 2</a></li>
+                  <li><a href="#l" class="presentation a">Google Labs</a></li>
+                </ul>
+              </details>
+              <a href="#10" class="presentation a">10. Google bard</a><br>
+              <a href="#11" class="presentation a">11. Paragraphica</a><br>
+              <a href="#12" class="presentation a">12. Comment sont programmées les IA ?</a><br>
+              <a href="#13" class="presentation a">13. Est-ce que l'IA peut penser ou apprendre ?</a><br>
+              <a href="#14" class="presentation a">14. Google Teachable Machine</a><br>
+              <a href="#15" class="presentation a">15. Est-ce que l'intelligence artificielle nous remplacera un jour
+                ?</a><br>
+              <a href="#16" class="presentation a">16. Les dangers de l'IA</a><br>
+              <a href="#17" class="presentation a">17. Conclusion</a><br>
+            </ul>
+          </h3>
+        </b><br>
+        <!-- <p class="last-modified">Dernière modification le : 30 Août 2023 </p><br> -->
+        <!-- <div class="right"><a href="#14" class="new">NOUVEAUTÉS</a></div><br><br> -->
+        <br>
+      </ul>
+    </div>
+  </section>
+
+
+  <!--────────────────Main───────────────-->
+
+  <main>
+    <ul>
+      <h2 id="1">1. Qu'est-ce que l'intelligence artificielle ?</h2>
+      <p>"C'est la capacité conférée par les humains aux machines,
+        <br>de mémoriser et d'apprendre sur la base de l'expérience,
+        <br>de penser, de créer, de parler, de juger et de décider"
+      </p><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="2">2. Son assistance au quotidien</h2>
+      <img src="Files/2-img-ia-assistants-vocaux-Frandroid.jpg" alt="ia" width="800"><br>
+      <p>L'IA est notamment présente dans les assistants vocaux, tout comme Google, Siri, Bixby, Alexa
+        ou Celia, ces IA
+        nous permettent de nous aider dans notre vie quotidienne comme par exemple éteindre les lumières à 20h si on a
+        une maison connectée, ou lui demander la météo d'aujourd'hui en l'appelant simplement par son nom en disant "hey
+        google" ou "dit siri" pour les plus connues, Google et Siri.</p><br>
+      <!-- <a href="https://www.frandroid.com/produits-android/smartphone/1446989_google-assistant-vs-siri-vs-amazon-alexa-on-a-compare-tous-les-assistants-vocaux"
+        target="_blank" class="a"><u>Frandroid sur les assistants vocaux</u></a><br>
+      <br>
+      <a href="https://www.youtube.com/watch?v=poE4g26Iu4k" target="_blank" class="a"><u>Vidéo de frandroid sur les
+          assistants
+          vocaux</u></a><br> -->
+
+      <div class="bv">
+        <br>
+        <details>
+          <summary>Informations supplémentaires</summary><br>
+          <div class="hr"></div><br>
+          <a href="https://www.youtube.com/watch?v=poE4g26Iu4k" target="_blank" class="bv-a"><u>Vidéo de frandroid sur
+              les assistants
+              vocaux :</u></a><br><br>
+          <iframe src="https://www.youtube.com/embed/poE4g26Iu4k" width="700" height="400" frameborder="0"
+            allowfullscreen></iframe><br>
+          <a href="https://www.frandroid.com/produits-android/smartphone/1446989_google-assistant-vs-siri-vs-amazon-alexa-on-a-compare-tous-les-assistants-vocaux"
+            target="_blank" class="bv-a"><u>Frandroid sur les assistants vocaux :</u></a><br><br>
+          <iframe
+            src="https://www.frandroid.com/embed/produits-android/smartphone/1446989_google-assistant-vs-siri-vs-amazon-alexa-on-a-compare-tous-les-assistants-vocaux"
+            width="700" height="400" frameborder="0"></iframe>
+        </details>
+        <br>
+      </div><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="3">3. L'IA dans la santé</h2>
+      <img src="Files/3-img-ia-watson-IBM.jpg" alt="ia" width="800"><br>
+      <p>En Grande-Bretagne des chercheurs ont étudié la capacité de l’IA dans la prédiction de crise cardiaque chez un
+        patient. C’est-à-dire qu’elle est capable d’accumuler et de regrouper une grande quantité d’informations
+        médicales. Donc elle est bien plus efficace que les humains pour établir des diagnostics.<br>
+        Les avantages : les médecins pourront se concentrer sur leurs patients à risque, tandis que les autres éviteront
+        un traitement inutile.<br>
+        Ce système d’IA a été nommé Watson et mis au point par un IBM. Grâce à <a
+          href="https://www.ibm.com/fr-fr/watson" target="_blank" class="a"><u>Watson</u></a> il a non seulement
+        confirmé des
+        traitements prescrits par des cancérologues mais il a aussi trouvé 30 % d’options thérapeutiques supplémentaires
+        que les médecins n’avaient pas identifiées.<br><br>
+        <img src="Files/3-gif-ia-xenobots.gif" alt="ia" width="800"><br>
+        Il y a aussi les <a
+          href="https://www.intelligence-artificielle-school.com/actualite/xenobotes-les-premiers-robots-vivants/?gclid=CjwKCAjwge2iBhBBEiwAfXDBR1rK1MqCrFPLqak65VhpRxZDqo_o5b2-rJ_ww3sB-1Ea2aORmkE_nRoCmKEQAvD_BwE"
+          target="_blank" class="a"><u>Xénobots</u></a> : ce sont des robots vivants nés de l’association de l’IA et de
+        la
+        biologie. Constitués à partir d’une cellule-souche de peau et cœur d’une grenouille du genre xénopus. Pour le
+        moment on leur a trouvé comme utilité de les programmer pour soigner des organes malades
+      </p><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="4">4. L'IA dans l'art</h2>
+      <img src="Files/4-img-ia-logo-midjourney.jpg" alt="ia" width="800"><br>
+      <p><a href="https://www.midjourney.com/home/" target="_blank" class="a"><u>"Midjourney"</u></a> est actuellement
+        l'IA la
+        plus puissante dans l'univers artistique, cette IA se trouvant sur discord permet de transformer les mots
+        (appelés "prompts") en oeuvres d'art, nous pouvons lui demander n'importe quel style artistique et n'importe
+        quelle résolution. La v5 sortie récemment permet de réaliser des œuvres si réalistes avec lesquelles nous ne
+        pouvons pas faire la différence avec une photo.</p><br>
+      <img src="Files/4-img-ia-maison-midjourney.jpg" alt="ia" width="800"><br>
+      <p>Voici ci-joint l'une de mes créations avec Midjourney :</p><br>
+      <img src="Files/4-img-ia-macreation-midjourney.png" alt="création midjourney" width="300"><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="5">5. L'IA dans les vidéos</h2>
+      <img src="Files/5-gif-ia-a-teddy-bear-meaking-a-portrait-makeavideo.gif" alt="ia" width="800"><br>
+      <p><a href="https://makeavideo.studio/" target="_blank" class="a"><u>"Make a video"</u></a> est une IA développée
+        par google
+        et meta permettant de réaliser des vidéos en suivant le même procédé que Midjourney (prompts). Il suffit de lui
+        demander : "A teddy bear making a portrait" pour générer un extrait de video ci-dessus. Mais make-a-video a été
+        suspendu car on pouvait créer trop de deep-fake (fausses vidéos) que j'expliquerai dans <a href="#14"
+          class="a"><u>les
+            dangers de l'IA.</u></a></p><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="6">6. L'IA dans la musique</h2>
+      <img src="Files/6-img-ia-logo-magenta.jpg" alt="ia" width="800"><br>
+      <p><a href="https://magenta.tensorflow.org/" target="_blank" class="a"><u>"Magenta"</u></a> est un logiciel
+        développé par
+        google permettant de faire de la musique de tous genres. Cette IA peut également servir d'aide à la création
+        d'un morceau de musique.</p><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="7">7. Chatgpt</h2>
+      <img src="Files/7-img-ia-logo-stylisee-chatGPT-circuit.jpg" alt="ia" width="800"><br>
+      <p>ChatGPT (Chat Generative Pretrained Transformerest = Chat Transformateurs pré-entraînés génératifs) est un
+        prototype d'agent conversationnel utilisant l'intelligence artificielle, développé par OpenAI et spécialisé dans
+        le dialogue.<br>ChatGPT est capable de générer des réponses à des questions, de compléter des phrases, de
+        traduire des textes, de coder en n'importe quel langage de programmation, d'écrire des articles et de tenir des
+        conversations avec des humains. <br> Pour visualiser la puissance de cette IA chat GPT-3 comporte 175 milliards
+        de paramètres et chat GPT-4 comporte 100 trillions (soit 100 000 milliards) de paramètres, ce qui correspond au
+        nombre de paramètres d'un cerveau humain. <br> Cette IA a les capacités nécessaires pour prétendre être
+        l'intelligence artificielle la plus puissante à ce jour !</p><br>
+
+      <div class="bv">
+        <br>
+        <details>
+          <summary> Informations supplémentaires</summary><br>
+          <div class="hr"></div><br>
+          <a href="https://youtu.be/mQcW9Fs2pbk" target="_blank" class="bv-a"><u>Vidéo de Monsieur GRrr sur
+              chatgpt :</u></a><br><br>
+          <iframe src="https://www.youtube.com/embed/mQcW9Fs2pbk" width="700" height="400" frameborder="0"
+            allowfullscreen></iframe>
+        </details>
+        <br>
+      </div><br>
+
+      <!-- <a href="https://youtu.be/mQcW9Fs2pbk" target="_blank" class="a"><u>Vidéo de Monsieur GRrr sur
+          chatgpt</u></a><br><br> -->
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="8">8. Microsoft bing</h2>
+      <p>Bien que ChatGPT soit un modèle d'intelligence artificielle puissant, bing a récemment sorti son IA en
+        collaboration avec l'entreprise d'openAI. Son nom : "le nouveau bing", rien d'impressionnant pour l'instant,
+        mais il présente autant d'avantages que d'inconvénients que chatGPT et concurrence le navigateur google chrome !
+      </p><br><br>
+      <img src="Files/8-img-ia-page-dacceuil-nouveau-bing-presentation.jpg" alt="ia" width="800"><br>
+      <p>Avantages par rapport à chatGPT :</p>
+      <ul type="disc" class="liste">
+        <li>
+          <m>Copilote à portée de main</m>
+        </li>
+        <li>
+          <m>Basé sur plusieurs sources et relié directement sur le web</m>
+        </li>
+        <li>
+          <m>Cite les sources</m>
+        </li>
+        <li>
+          <m>Plusieurs styles d'écritures ("Créatif" ; "Équilibré" ; "Précis")</m>
+        </li>
+        <li>
+          <m>Informations récentes (alors que chatGPT 3 possède des informations allant jusqu'à septembre 2021)</m>
+        </li>
+        <li>
+          <m>Simulation d'émotions avec des émojis : 😊</m>
+        </li>
+      </ul><br>
+      <p>Inconvénients par rapport à chatGPT :</p>
+      <ul type="disc" class="liste">
+        <li>
+          <m>Basé uniquement sur des sources</m>
+        </li>
+        <li>
+          <m>Qualité et longueur de production de texte inférieur à chatGPT</m>
+        </li>
+        <li>
+          <m>Encore quelques imprécisions</m>
+        </li>
+      </ul><br>
+      <p>Comme vous l'avez compris, bing sera plus dédié à la recherche que chatGPT, certains internautes le nomment "le
+        chatGPT 4 gratuit" car comme il est relié au web il ne manquera jamais des actualités alors qu'il fallait payer
+        pour accéder aux dernières informations avec chatGPT 4.
+        Pour conclure, ces 2 modèles d'intelligences artificielles sont très différents et il faudra bien choisir
+        suivant le besoin nécessaire, bing pour la recherche et chatGPT pour une réponse plus élaborée.
+      </p><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="9">9. Les innovations de google 2023-2024</h2>
+      <img src="Files/9-img-ia-page-dacceuil-google-event-IO.jpg" alt="ia" width="800"><br>
+      <p>La <a href="https://io.google/2023/" target="_blank" class="a"><u>Google I/O</u></a>, cet événement annuel où
+        Google nous
+        dévoile ses derniers tours de magie. Cette année, la conférence du 10 mai n'a pas dérogé à la règle, avec
+        l'intelligence artificielle en vedette. Voici en détails les 11 démos les plus bluffantes de cette édition 2023.
+      </p><br>
+
+      <h4 id="a">1. Le photoshop le plus rapide de tous les temps grâce à la toute nouvelle IA de google photos :</h4>
+      <br> <img src="Files/9-gif-ia-google-magic-editor-ex1-IO.gif" alt="ia" width="800"><br>
+      <a href="https://lintelligence-artificielle.piorte06.repl.co/Files/9-img-ia-google-magic-editor-ex2-details-IO.jpg"
+        target="_blank">
+        <img src="Files/9-gif-ia-google-magic-editor-ex2-details-IO.gif" alt="ia" width="800"></a><br>
+      <p>Le nouvel outil d’édition de Google Photos, Magic Editor, vous permettra de faire des retouches importantes
+        comme améliorer le ciel, effacer les personnes en arrière-plan, et même déplacer un objet en recréant une partie
+        qui a été découpé par le cadrage de la photo comme nous pouvons le voir sur la photo numéro 2, ou le banc et les
+        ballons de l'enfant ont été recréés !</p><br>
+
+      <h4 id="b">2. Le détecteur d’images créées en IA générative :</h4>
+      <p>Face à la prolifération d’images modifiées par l’IA ou générées par des outils comme Midjourney ou Stable
+        Diffusion, Google propose une solution : la fonction « About this image ».<br> <br><img
+          src="Files/9-img-ia-google-about-this-image-source-IO.jpg" alt="ia" width="800"><br> Ainsi, Google pourra
+        identifier l’origine des images, comme il le fait avec les fake news. Il est capable de retrouver l’origine
+        d’une photo, pas uniquement en cherchant des indices sur la photo, mais en cherchant l’image originale dans sa
+        base de données.</p><br>
+
+      <h4 id="c">3. Google Maps et sa « Vue immersive pour les itinéraires » :</h4>
+      <p>Préparez-vous à voir la planification de votre itinéraire sous un tout nouvel angle. La nouvelle fonctionnalité
+        de Google Maps compile toutes les informations nécessaires (trafic, pistes cyclables, intersections, parking…)
+        en un seul endroit.<br> <br><img src="Files/9-img-ia-google-maps-immersive-view-IO.jpg" alt="ia"
+          width="800"><br> En utilisant la vision par ordinateur et l’IA, Immersive View fusionne des milliards d’images
+        Street View et aériennes pour créer un modèle numérique du monde. C’est comme une répétition générale avant le
+        jour J.</p><br>
+
+      <h4 id="d">4. MusicLM, l’outil d’IA qui transforme le texte en musique :</h4>
+      <p>Marre des playlists toutes faites ? Alors que google avait créé l'IA magenta dédié pour la musique, google a
+        sorti une IA encore plus puissante pour la musique, son nom : <a
+          href="https://google-research.github.io/seanet/musiclm/examples/?ref=futuretools.io" target="_blank"
+          class="a"><u>"MusicLM"</u></a>.</p> <br><br><img
+        src="Files/9-img-ia-google-musicLM-presentation-wait-list-IO.jpg" alt="ia" width="800"><br>
+      <p>Tapez simplement « soulful jazz for a dinner party » et demandez à l’outil de vous créer plusieurs versions de
+        la chanson. Voici un extrait d'une musique réalisé par musicLM : <br><br><audio controls
+          controlslist="nodownload">
+          <source src="Files/9-relaxing-jazz-create-by-musicLM.mp3" type="audio/mp3">"Your browser does not support the
+          audio element."
+        </audio><br><br> Ce générateur de musique rentre en phase de test publique, on peut s’inscrire sur la <a
+          href="https://aitestkitchen.withgoogle.com/experiments/music-lm" target="_blank" class="a"><u>liste
+            d’attente.</u></a></p><br>
+
+      <h4 id="e">5. Universal Translator, le doublage</h4>
+      <p>Présenté lors de la conférence I/O de Google, l‘Universal Translator ambitionne de transposer des vidéos d’une
+        langue à une autre, tout en préservant l’intonation et l’atmosphère d’origine. Il s’agit en fait d’un traducteur
+        à synchronisation labiale.</p><br><br> <img src="Files/9-img-ia-google-presentation-universal-translator-IO.jpg"
+        alt="ia" width="800"><br>
+      <p>Cela signifie que cet outil ne se limite pas à la conversion de l’audio d’une langue à une autre, il reproduit
+        aussi la voix, l’intonation et les mimiques du locuteur. Vous avez bien compris : la vidéo traduite ajuste les
+        mouvements labiaux du locuteur pour correspondre aux expressions propres à la langue cible.</p><br>
+
+      <h4 id="f">6. Sidekick, l’assistant personnel pour Google Docs :</h4>
+      <p>Le nouveau panneau Sidekick de Google, présenté lors de cette conférence, s’intègre dans un panneau latéral de
+        Google Docs. Il lit et traite en permanence l’ensemble de votre document pendant que vous écrivez, offrant des
+        suggestions contextuelles qui se réfèrent spécifiquement à ce que vous avez écrit.</p><br><br> <img
+        src="Files/9-img-ia-google-bard-sidekick-doc-suggest-generating-IO.jpg" alt="ia" width="800"><br>
+      <p>Par exemple, si vous écrivez une histoire pour enfants, Sidekick peut suggérer ce qui pourrait arriver ensuite
+        dans le récit. L’outil peut également générer des images basées sur le contenu du document, aidant ainsi à
+        illustrer l’histoire au fur et à mesure de son écriture. Google a également démontré sa capacité à résumer des
+        conversations écrites, à proposer des notes pour le présentateur, et plus encore.<br>
+        Toutes ces fonctionnalités font partie de la suite Duet AI de Google, tout juste rebaptisée. C’est une solution
+        comparable à ce que Microsoft a présenté avec ses fonctionnalités alimentées par l’IA Copilot.</p><br>
+
+      <h4 id="g">7. Tailwind, l’outil de bloc-notes alimenté par l’IA :</h4>
+      <p>Si vous avez toujours rêvé d’un assistant personnel qui organise et résume automatiquement vos notes, le <a
+          href="https://thoughtful.sandbox.google.com/about" target="_blank" class="a"><u>Project Tailwind</u></a> est
+        fait pour
+        vous.</p><br><br> <img src="Files/9-img-ia-google-tailwind-IO.jpg" alt="ia" width="800"><br>
+      <p>Sélectionnez des fichiers sur Google Drive et l’outil crée un modèle d’IA, ainsi qu’une interface personnalisée
+        pour parcourir les notes et les documents.</p><br>
+
+      <h4 id="h">8. Project Starline, la téléconférence en 3D :</h4>
+      <p>Finies les réunions Zoom où l’on peine à distinguer les visages de ses collègues. Avec le dernier prototype du
+        Project Starline, Google propose une cabine vidéo de téléconférence 3D.</p><br><br> <img
+        src="Files/9-img-ia-google-project-starline-3D-IO.jpg" alt="ia" width="800"><br>
+      <p>Les améliorations notables inclus moins de matériel, comme un nombre réduit de caméras et un plus grand
+        recours à l’IA et au Machine Learning pour générer des images en trois dimensions.</p><br>
+
+      <h4 id="i">9. Google peut écrire vos textes à l’aide de l’IA :</h4>
+      <p>La fonctionnalité Magic Compose, vous permet de réécrire des textes dans différents styles plus positif, plus
+        professionnel ou même à la manière de Shakespeare pour les littéraires nostalgiques.</p><br><br> <img
+        src="Files/9-gif-ia-google-magic-compose-message-IO.gif" alt="ia" width="800"><br>
+      <p>Cette fonctionnalité sera intégrée à Google Messages. Vous commencerez par rédiger votre message de la manière
+        habituelle. Ensuite, vous choisirez le ton que vous souhaitez donner au message et Magic Compose adaptera le
+        texte en fonction.</p><br> <img src="Files/9-img-ia-google-magic-compose-gmail-IO.jpg" alt="ia" width="800"><br>
+      <p>Concernant Gmail, Google a dévoilé une fonctionnalité franchement impressionnante. Baptisée Help Me Write
+        (Aide-moi à écrire), son principe est aussi simple que son nom l’indique : en cliquant sur un bouton situé au
+        bas de la fenêtre de courrier électronique, vous pouvez demander à Gmail de formuler une réponse pour vous.</p>
+      <br>
+
+      <h4 id="j">10. Présentation de paLM 2 :</h4>
+      <p><a href="https://ai.google/discover/palm2/" target="_blank" class="a"><u>paLM 2</u></a> est une intelligence
+        artificielle
+        fonctionnant sous <a href="#10" class="a"><u>google bard</u></a> (qui sera étudié en profondeur sur le sujet
+        suivant)
+        dédié à la programmation. Cette IA excelle dans tous les langages de programmations tel que python, java, c++,
+        html-css-js, et bien plus encore... paLM possède également la capacité de transformer un code python en code
+        c++, et ce n'est pas tout, en plus de pouvoir programmer cette IA peut aussi résoudre n'importe quel problème de
+        mathématiques !</p><br><br> <img src="Files/9-img-ia-google-presentation-logo-paLM2-IO.jpg" alt="ia"
+        width="800"><br>
+      <p>paLM 2 possède plusieurs modèles qui procurent d'excellentes capacités de base dans une large gamme de tailles.
+        Google les a nommés : "Gecko" - "Otter" - "Bison" - "Unicorn".</p><br> <img
+        src="Files/9-img-ia-google-presentation-models-paLM2-IO.jpg" alt="ia" width="800"><br>
+      <p>Gecko est si léger qu'il peut fonctionner sur n'importe quel appareil mobile et est assez rapide pour de grande
+        applis interactives sur un terminal, même hors-ligne. Les modèles de paLM 2 sont plus puissants en logique et en
+        raisonnement grâce à une large formation sur des domaines scientifiques, mathématiques et également sur plus de
+        100 langues pour pouvoir aider les développeurs du monde entier !</p><br> <img
+        src="Files/9-img-ia-google-presentation-code-lang-with-paLM2-IO.jpg" alt="ia" width="800"><br>
+
+      <h4 id="k">11. Présentation de a. sec-paLM et de b. med-paLM 2 :</h4>
+      <p> a. Sec-paLM : En plus de paLM 2 google a développé sec-paLM, une IA dédié pour la sécurité. Sec-paLM est en
+        réalité une version de paLM 2 affiné pour les cas d'utilisation liés à la sécurité. Il utilise donc l'ia pour
+        mieux détecter les scripts malveillants et peut aider les experts en sécurité à comprendre et à résoudre les
+        menaces</p><br> <img src="Files/9-img-ia-google-presentation-model-sec-paLM-IO.jpg" alt="ia"
+        width="800"><br><br>
+      <p>b. med-paLM 2 : Il y a donc aussi med-paLM 2 une IA cette fois ci dédié dans le domaine des connaissances
+        médicales. med-paLM 2 permet de diviser par 9 les raisonnements inexacts par rapport au modèle, il s'approche
+        ainsi des performances des experts cliniciens qui ont répondu aux mêmes questions !</p><br> <img
+        src="Files/9-img-ia-google-presentation-model-med-paLM2-IO.jpg" alt="ia" width="800"><br>
+      <p>En fait, med-paLM 2 a été le premier modèle linguistique à obtenir un "niveau expert" sur des questions
+        d'examens d'aptitude médicale et d'être à la pointe de la technologie. Google travaille encore aujourd'hui sur
+        l'ajout de fonctionnalités de med-paLM 2 afin qu'il puisse synthétiser les informations de l'imagerie médicale.
+        Imaginez un collaborateur IA qui aide les radiologues, interprète les images et communique les résultats.</p>
+      <br> <img src="Files/9-img-ia-google-presentation-communication-with-med-paLM2-film-IO.jpg" alt="ia"
+        width="800"><br> <img src="Files/9-img-ia-google-presentation-communication-reponse-med-paLM2-film-IO.jpg"
+        alt="ia" width="800"><br>
+
+      <h4 id="l">Google labs</h4>
+      <p>En somme, les innovations de google présentées ici appartiennent aux technologies du bloc <a
+          href="https://labs.withgoogle.com/" target="_blank" class="a"><u>google labs</u></a>. Pour tout dire, google
+        labs
+        propose les principaux prototypes d'IA et offre la possibilité de rejoindre la "liste d'attente" pour être
+        informé lorsque les expériences seront mises à disposition dans notre pays.</p><br> <iframe
+        src="https://labs.withgoogle.com/" title="Google Labs" width="800" height="500"></iframe><br><br>
+
+      <div class="bv">
+        <br>
+        <details>
+          <summary> Informations supplémentaires</summary><br>
+          <div class="hr"></div><br>
+          <a href="https://www.youtube.com/watch?v=cNfINi5CNbY" target="_blank" class="bv-a"><u>Conférence de google I/O
+              sur toutes
+              les innovations :</u></a><br><br>
+          <iframe src="https://www.youtube.com/embed/cNfINi5CNbY" width="700" height="400" frameborder="0"
+            allowfullscreen></iframe><br>
+          <a href="https://www.youtube.com/watch?v=QpBTM0GO6xIlist=TLGGCy91ScdjTPYyODA1MjAyMw" target="_blank"
+            class="bv-a"><u>
+              Résumé en 10min sur l'évenement de la google I/O :</u></a><br><br>
+          <iframe src="https://www.youtube.com/embed/QpBTM0GO6xI" width="700" height="400" frameborder="0"
+            allowfullscreen></iframe>
+        </details>
+        <br>
+      </div><br>
+
+      <!-- <b><a href="https://www.youtube.com/watch?v=cNfINi5CNbY" target="_blank" class="a"><u>Conférence de google I/O sur
+            toutes
+            les innovations</u></a></b><br>
+      <b><a href="https://www.youtube.com/watch?v=QpBTM0GO6xIlist=TLGGCy91ScdjTPYyODA1MjAyMw" target="_blank"
+          class="a"><u>Résumé
+            en 10min sur l'évenement de la google I/O</u></a></b><br><br> -->
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="10">10. Google bard</h2>
+      <p>Après ChatGPT et Bing, c'est <a href="https://bard.google.com/?hl=en" target="_blank" class="a"><u>Google
+            Bard</u></a>
+        qui se lance dans l'intelligence artificielle pour devancer OpenAI et Microsoft qui avaient sorti leur modèle
+        d'IA bien avant Google. Mais alors qu'est-ce que cette intelligence artificielle a de plus par rapport aux deux
+        autres IA.</p><br>
+      <img src="Files/10-img-ia-google-bard-logo.png" alt="ia" width="500"><br>
+      <p>
+        ▶ Une IA qui peut lire et comprendre les images :<br>
+        En effet Bard est à la pointe de la technologie, il peut lire n'importe quelles images alors que les autres
+        modèles comportaient encore beaucoup d'imprécision.<br><br>
+        ▶ Une IA comme Bing, disponible partout :<br>
+        Tout comme Bing, google Bard est disponible à n'importe quelle recherche google pour pouvoir donner des
+        informations supplémentaires. Bard peut également être disponible sur google docs, slides, sheets, gmail et dans
+        le domaine de la programmation comme vu précédemment dans les innovations google.<br><br>
+        ▶ Une IA qui peut afficher des images :<br>
+        ChatGPT et Bing manquaient tous les deux d'une dernière chose, google a compris d'où venait le problème : le
+        chatbot Bard voit arriver une nouvelle manière d'afficher les informations, plus proche de la recherche que l'on
+        connaît. Désormais, dans ses réponses, Bard peut intégrer des images issues de Google Images pour clarifier les
+        informations et donner plus envie aux utilisateurs d'utiliser le modèle d'intelligence artificielle de
+        google.<br><br>
+        ▶ Une IA qui peut générer des images :<br>
+        OpenAi avait la possibilité de générer des images grâce à Dall-E, de même pour Bing, mais pour Bard c'est une
+        toute nouvelle IA générative d'image : Adobe Firefly, de l'entreprise professionnelle "Adobe", mais quoi de plus
+        à part le prestige par rapport aux autres ? Et bien au lieu de changer d'une application à l'autre, la
+        génération d'images sera directement intégré au chatbot Bard.</p><br>
+
+      <img src="Files/10-img-ia-google-bard-access.png" alt="ia" width="800"><br>
+      <p>En somme, Google Bard est sûrement le modèle d'IA le plus avancé. De plus il est désormais disponible
+        aujourd'hui le 13/07/23 après une longue attente du monde entier, nous pouvons le tester tout de suite à
+        l'adresse <a href="https://bard.google.com/" target="_blank" class="a">bard.google.com</a>. Malgrè cette
+        sortie, il reste encore quelques fonctionnalités qui ne sont pas disponible en France comme exposer une image
+        avec un prompt pour lui faire générer une réponse basé sur l'illustration qu'on lui a fournit. Néamoins il est
+        quand même possible d'y avoir accès en modifiant les paramètres du compte google pour le mettre en anglais car
+        ces fonctions ne seront que disponible en anglais.
+      </p><br>
+
+      <div class="bv">
+        <br>
+        <details>
+          <summary> Informations supplémentaires</summary><br>
+          <div class="hr"></div><br>
+          <a href="https://www.youtube.com/watch?v=nLX1X6lPU9g" target="_blank" class="bv-a"><u>Voir la video Frandroid
+              sur google
+              Bard :</u></a><br><br>
+          <iframe src="https://www.youtube.com/embed/nLX1X6lPU9g" width="700" height="400" frameborder="0"
+            allowfullscreen></iframe><br>
+          <a href="https://www.youtube.com/watch?v=dVsiusLQy5Q" target="_blank" class="bv-a"><u>Voir la présentation de
+              google bard en version copilote :</u></a><br><br>
+          <iframe src="https://www.youtube.com/embed/dVsiusLQy5Q" width="700" height="400" frameborder="0"
+            allowfullscreen></iframe><br>
+          <a href="https://bard.google.com/updates" target="_blank" class="bv-a"><u>Voir les dernières nouveautés et
+              mises à jour
+              de Bard</u></a>
+        </details>
+        <br>
+      </div><br>
+
+      <!-- <a href="https://www.youtube.com/watch?v=nLX1X6lPU9g" target="_blank" class="a">Voir la video Frandroid sur google
+        Bard</a><br>
+      <a href="https://bard.google.com/updates" target="_blank" class="a">Voir les dernières nouveautés et mises à jour
+        de Bard</a><br><br> -->
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="11">11. Paragraphica</h2>
+      <p>Paragraphica est un projet artistique sans caméra, ni objectif. Cette machine reprend le dessin des appendices
+        qui permettent aux taupes étoilées de sentir leur environnement. Paragraphica ne voit rien, l’objet « imagine »
+        l’extérieur à partir d’un prompt.
+        <br>Voici une modélisation 3D du site du créateur de paragraphica que vous pouvez manipuler :<br><br>
+        <iframe src="https://camera.sandbox.noodl.app/" title="Paragraphica" width="800" height="500"></iframe><br>
+        <br>Et voici un extrait vidéo sur la présentation de paragraphica :<br><br>
+        <video controls width="500" poster="Files/11-img-ia-paragraphica-poster-video.jpg">
+          <source src="Files/11-video-ia-paragraphica-presentation.mp4" type="video/mp4">
+        </video><br><br>
+        Ce projet vise donc à collecter différentes données, tel que la localisation, l'heure, la météo, etc... puis à
+        l'aide de différentes IA, il pourra générer une photographie de haute qualité ressemblant à peu près au lieu. Il
+        est également possible de choisir l'angle de vue, les emplacements proches, le cadrage et bien plus encore. De
+        plus, lorsque cette machine analyse les données il propose un prompt du genre un texte à trous que l'on peut
+        modifier pour donner une ambiance, une météo, ou encore de réaliser une image complétement modifiée de ce que
+        nous voyons. Cette machine crée donc un monde alternatif qui correspondra en partie à la réalité mais sans
+        aucune trace de celle-ci. Un faux monde que Paragraphica imagine à votre place pour créer de faux souvenirs.
+      </p><br>
+      Voici des exemples de réalisations :<br><br>
+      <img src="Files/11-img-ia-paragraphica-exemples-creation.jpg" alt="ia" width="800"><br>
+
+      <p>Avantages :</p>
+      <ul type="disc" class="liste">
+        <li>
+          <m>Créer une photo de qualité</m>
+        </li>
+        <li>
+          <m>Créer une ambiance et un monde alternatif</m>
+        </li>
+        <li>
+          <m>Réveler des pensées artistiques pour générer une image</m>
+        </li>
+        <li>
+          <m>Éviter de mettre trop d'argent dans les objectifs</m>
+        </li>
+      </ul><br>
+      <p>Inconvénients :</p>
+      <ul type="disc" class="liste">
+        <li>
+          <m>Pas la possibilité de capturer de vrais souvenirs telles que des photos de groupe ou des moments
+            particuliers</m>
+        </li>
+        <li>
+          <m>Difficulté en intérieur</m>
+        </li>
+        <li>
+          <m>Manque de précision sur la réalité</m>
+        </li>
+      </ul><br>
+      <p>Paragraphica est donc un appareil complexe qui peut servir à de nombreuses réalisations comme des images pour
+        des jeux vidéos ou des films, cela reste donc pour l'instant un objet dédié aux photographies à l'apparence
+        fictive.</p><br>
+
+      <div class="bv">
+        <br>
+        <details>
+          <summary> Informations supplémentaires</summary><br>
+          <div class="hr"></div><br>
+          <a href="https://bjoernkarmann.dk/project/paragraphica" target="_blank" class="bv-a"><u>Lien vers la
+              presentation de
+              paragraphica avec les explications de son créateur :</u></a><br><br>
+          <iframe src="https://bjoernkarmann.dk/project/paragraphica" width="700" height="400"
+            frameborder="0"></iframe><br>
+          <a href="https://bjoernkarmann.dk/" target="_blank" class="bv-a"><u>
+              Lien vers le site des créations du concepteur de paragraphica :</u></a><br><br>
+          <iframe src="https://bjoernkarmann.dk/" width="700" height="400" frameborder="0"></iframe>
+        </details>
+        <br>
+      </div><br>
+
+      <!-- <a href="https://bjoernkarmann.dk/project/paragraphica" target="_blank" class="a"><u>Lien vers la presentation de
+          paragraphica avec les explications de son créateur</u></a>
+      <a href="https://bjoernkarmann.dk/" target="_blank" class="a"><u>Lien vers le site des créations du concepteur de
+          paragraphica</u></a><br><br> -->
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="12">12. Comment sont programmées les IA</h2>
+      <img src="Files/12-img-ia-lang-programmation-py-c++-java.jpg" alt="ia" width="800"><br>
+      <p>Les IA sont notamment programmées en <b>Python, </b><b>C++, </b><b>Java</b> qui sont des langages de
+        programmation très utilisés.
+      <p><br>
+
+        <br>
+      <div class="marge"></div><br>
+
+      <h2 id="13">13. Est-ce que l'IA peut penser ou apprendre :</h2>
+      <img src="Files/13-img-ia-ai-can-think-or-learn-binary-code.jpg" alt="ia" width="800"><br>
+      <p>L’IA comporte 3 types d’apprentissages :</p>
+      <ul type="disc" class="liste">
+        <li>
+          <m>l’apprentissage supervisé</m>
+        </li>
+        <li>
+          <m>l’apprentissage non supervisé</m>
+        </li>
+        <li>
+          <m>l’apprentissage par renforcement</m>
+        </li>
+      </ul><br>
+      <p>L’apprentissage supervisé est un programme informatique qui met en confrontation l’IA à un ensemble de données
+        qui ont été déjà utilisées par son entraînement. Grâce à cela l’IA pourra s’appuyer sur ses connaissances pour
+        la couleur de la pomme elle sera verte ou rouge et pour celle de l’orange elle sera orange.</p><br>
+      <p>L’apprentissage non supervisé est de confronter l’IA à des objets qui ne sont pas dans sa base de données.
+        Donc, l’IA va devoir apprendre par elle-même, par exemple combien y a t’il d’espèces ? Elle ne l’a jamais appris
+        mais elle sait qu’il y en a de différentes couleurs comme la poule et le lapin, donc elle pourra en conclure
+        qu’il y a 2 espèces différentes par leur couleur.</p><br>
+      <p>L’apprentissage par renforcement : <a href="https://www.deepmind.com/research/highlighted-research/alphago"
+          target="_blank" class="a"><u>AlphaGO</u></a>, l’IA de Google utilise cette technique d’apprentissage. Celle-ci
+        implique
+        de dire au programme ce qu’on veut qu’il fasse, et de laisser ensuite agir par lui-même. Au fur et à mesure
+        qu’il progresse vers l’objectif voulu, il est mieux noté et ses actions positives sont ainsi renforcées. Par ex
+        dans les échecs, l’IA apprend ses coups qui la font perdre et ne les utilisera plus à l’avenir, mais en revanche
+        les coups gagnants elle les retient et les utilisera à l’avenir.</p><br><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="14">14. Google Teachable Machine</h2>
+      <img src="Files/14-gif-ia-Google-Teachable-Machine-Train.gif" alt="ia" width="800"><br>
+      <p>Nous avons vu précédemment les trois types d'apprentissages principaux d'une IA : l'apprentissage supervisé,
+        non supervisé, et par renforcement. Ces trois modèles d'apprentissage font partie du groupe du <b>"machine
+          learning"</b>, mais qu'en est t-il du <b>"deep learning"</b> (aussi dit apprentissage profond), un autre
+        prototype d'apprentissage important que je n'ai pas évoqué jusqu'à présent ? </p><br>
+      <img src="Files/14-gif-ia-Google-Teachable-Machine.gif" alt="ia" width="800"><br>
+      <p>Une IA à la disponibilité de tous est capable de représenter ce type d'apprentissage : Google Teachable
+        Machine. En effet, ce modèle d'IA utilise le deep learning pour créer des modèles de classification basés sur
+        des réseaux de neurones. C’est une forme de machine learning plus avancée et plus adaptée à certaines tâches.
+        Cette IA est donc capable de nommer des choses à partir de plusieurs éléments que nous lui fournissons (images,
+        vidéos, sons), nous pouvons également la connecter à des appareils intelligents tout comme des téléviseurs ou
+        des lampes. Imaginez qu'après l'avoir entrainée, on puisse allumer la lumière du salon en un claquement de
+        doigts ! Mais elle est capable de bien plus que cela, après plusieurs entraînements de reconnaissance de sons,
+        on a donné naissance à une IA du même modèle que celui de teachable machine capable de reconnaître le bruit que
+        fait chaque touche du clavier. Avec un taux d'erreur de 5% uniquement cette IA pourrait à l'avenir deviner vos
+        mots de passe....</p>
+      <br>
+
+      <div class="bv">
+        <br>
+        <details>
+          <summary> Informations supplémentaires</summary><br>
+          <div class="hr"></div><br>
+          <a href="https://teachablemachine.withgoogle.com/" target="_blank" class="bv-a"><u>
+              Google Teachable Machine</u></a><br><br>
+          <a href="https://www.futura-sciences.com/tech/breves/securite-cette-ia-peut-trouver-votre-mot-passe-grace-bruit-clavier-8695/"
+            target="_blank" class="bv-a"><u>L'article complet de futura sciences</u></a><br>
+        </details>
+        <br>
+      </div><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="15">15. Est-ce que l'IA nous remplacera un jour</h2>
+      <img src="Files/15-img-ia-tang-yu-pdg-websoft-netdragon.jpg" alt="ia" width="800"><br>
+      <p>Ce n’est pas de la science-fiction. Une femme robot vient d’être nommée à la tête d’une grosse entreprise
+        chinoise. L’un des leaders chinois du jeu vidéo, NetDragon Websoft.<br>
+        Ce personnage est donc <a
+          href="https://www.lesnumeriques.com/vie-du-net/en-chine-l-intelligence-artificielle-tang-yu-est-devenue-pdg-n192725.html"
+          target="_blank" class="a"><u>Tang Yu</u></a>, une femme robot qui a commencé par occuper le poste de PDG
+        tournant de la
+        société.<br>
+        Avantage : elle peut travailler 24h/24h sans être payée !</p><br>
+      <img src="Files/15-img-ia-painting-by-midjourney-price-win.jpg" alt="ia" width="800"><br>
+      <p>Et puis, il y a eu un tableau créé par l'IA midjourney qui a fait polémique dernièrement en gagnant un concours
+        d’art dans la catégorie "art numérique" aux États-Unis.<br>
+        Un internaute a écrit : <br><i>"La mort du métier d’artiste se déroule en ce moment sous nos yeux. Si les
+          métiers créatifs ne sont pas à l’abri des machines, alors même les métiers à hautes compétences risquent de
+          devenir obsolètes. Que nous restera-t-il alors ?"</i></p><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="16">16. Les dangers de l'IA</h2>
+      <img src="Files/16-img-ia-be-or-not-be.jpg" alt="ia" width="800"><br>
+      <p>L'IA a su faire de grandes avancées dans de nombreux domaines tels que la médecine, l'art, etc...<br> Mais
+        entre de mauvaises mains elle peut servir à de fins criminelles ou à la désinformation,<br> les menaces sont
+        graves :
+      <p>
+      <ul type="disc" class="liste">
+        <li>
+          <m>Usurpation de l'identité: usurper l’identité d’une personne en lui faisant dire ou faire quelque chose
+            qu’elle
+            n’a jamais fait (comme avec make-a-video), et ces vidéos truquées seront quasiment indétectables.
+            Aux États-Unis, une mère a reçu un appel d’un homme qui prétendait détenir sa fille et qui lui a demandé une
+            rançon. La mère hésitante a prévenu la police, un peu plus tard on découvre lorsque l'enquête a été résolu
+            que l’homme avait utilisé une IA pour cloner la voix de la fille et faire croire à la mère qu’il avait sa
+            fille en otage et qu'en réalité sa fille se portait très bien. L’histoire est terrifiante et montre comment
+            l’IA peut être utilisée pour des activités criminelles. <a
+              href="https://www.futura-sciences.com/tech/actualites/intelligence-artificielle-terrifiante-histoire-escroquerie-clonage-voix-realise-ia-104646/"
+              target="_blank" class="a">Voir l'article complet de futura-sciences</a>
+          </m>
+        </li>
+        <li>
+          <m>le piratage de voitures autonomes : s’emparer des commandes d’un véhicule pour s’en servir comme arme. Ex :
+            attaque terroriste</m>
+        </li>
+        <li>
+          <m>hameçonnage sur mesure (phishing) : augmenter l’efficacité du "phishing" visant à collecter des
+            informations sécurisées.</m>
+        </li>
+        <li>
+          <m>piratages des systèmes contrôlés par l’IA : perturber les infrastructures en causant par ex une panne
+            d’électricité généralisée.</m>
+        </li>
+        <li>
+          <m>fausses informations rédigées par l'IA : écrire des articles de propagandes par exemple (chatgpt)</m>
+        </li>
+      </ul><br>
+
+      <br>
+      <div class="marge"></div><br>
+
+      <h2 id="17">17. Conclusion</h2>
+      <img src="Files/17-img-ia-me-with-ai-association.jpg" alt="ia" width="800" id="no-clic" draggable="false"><br>
+      <p>Pour conclure, l’IA est un sujet passionnant. Cela est à la fois fascinant et effrayant. L’IA sera omniprésente
+        dans les années à venir et c’est pour cela qu'il faudra être habitué à vivre avec l'intelligence artificielle.
+      </p><br><br>
+    </ul>
+  </main>
+
+  <!--────────────────Footer───────────────-->
+
+  <footer id="contact">
+    <br><br>
+    <div class="container">
+      <p><i>
+          <img src="gaetan-gil.jpg" id="no-clic" draggable="false" class="moi no-clic">
+          Qui suis-je ?<br>
+          Je m'appelle Gaëtan GIL et je suis passionné par la programmation, les nouvelles technologies et
+          l'intelligence artificielle que j'ai eu l'honneur de vous présenter sur cette page web. Lorsque j'ai conçu mon
+          site j'ai regroupé mes connaissances sur ce sujet et des recherches sur les innovations les plus récentes
+          comme
+          les innovations de google qui ont été exposées en mai 2023. Mon site est régulièrement mis à jour en fonction
+          de l'actualité lié à l'intelligence artificielle. Un nouveau modèle d'IA à me proposer, contactez moi ci-dessous :
+        </i></p>
+    </div><br><br>
+    <p>L'intelligence artificielle présentée par : Gaëtan GIL</p> <br>
+    <!-- <p>Sources : <a href="https://www.bfmtv.com/" target="_blank" class="a"><u>BFMTV</u></a>, <a
+        href="https://www.lesnumeriques.com/" target="_blank" class="a"><u>Lesnumeriques</u></a>, <a
+        href="https://www.futura-sciences.com/" target="_blank" class="a"><u>futura-sciences</u></a>, <a
+        href="https://www.francetvinfo.fr/" target="_blank" class="a"><u>francetvinfo</u></a>, <a
+        href="https://www.frandroid.com/" target="_blank" class="a"><u>FrAndroid</u></a>, <u>magazine
+        toutcomprendre</u></p><br> --> <br>
+    <div class="contact">
+      <form method="POST" id="contact-form" action="https://formspree.io/f/mrgwqkgv">
+        <h3>Contactez moi</h3>
+        <input type="text" id="name" placeholder="Nom" required name="Nom">
+        <input type="email" id="email" placeholder="Adresse mail" required name="Adresse mail">
+        <input type="text" id="phone" placeholder="(Numéro de téléphone)" name="Numéro de téléphone">
+        <input type="text" id="subject" placeholder="Objet" required name="Objet">
+        <textarea id="message" rows="4" placeholder="Saisissez votre message" required name="message"></textarea>
+        <button type="submit" id="btn">Envoyer</button>
+      </form>
+    </div>
+    <br><br><br>
+    <c>Copyright &copy; 2023 Tous droits réservés</c><br>
+  </footer>
+
+  <script type="text/javascript">
+    document.getElementById("no-clic").addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+
+
+    const noClicElements = document.querySelectorAll(".no-clic");
+    noClicElements.forEach(element => {
+      element.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+    });
+  </script>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Empêche le comportement par défaut du formulaire
+
+      const form = event.target;
+
+      // Soumet le formulaire vers Formspree
+      fetch(form.action, {
+        method: form.method,
+        headers: {
+          "Accept": "application/json",
+        },
+        body: new FormData(form),
+      })
+        .then(response => response.json())
+        .then(data => {
+          alert("Message envoyé avec succès !");
+          form.reset(); // Réinitialise le formulaire
+        })
+        .catch(error => {
+          console.error("Erreur lors de l'envoi du message :", error);
+        });
+    });
+
+  </script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
